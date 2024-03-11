@@ -15,7 +15,7 @@ interface filterData {
   image: string
 }
 
-const DetailPokemon = () => {
+const PokemonDetail = () => {
   const [pokemon, setPokemon] = useState<filterData>()
   const { name } = useParams()
 
@@ -48,7 +48,7 @@ const DetailPokemon = () => {
   }
   return (
     <Layout>
-      <div className="container h-screen border p-3 bg-slate-300 dark:bg-primary-1 border-transparent space-y-6 overflow-y-scroll">
+      <div className="container border p-3 bg-slate-300 dark:bg-primary-1 border-transparent space-y-6 overflow-auto">
         <div className="grid grid-cols-2 gap-4">
           <Card className="bg-slate-100 shadow-lg dark:bg-transparent flex flex-col justify-center items-center gap-y-8 ring-black ring dark:ring-white">
             <img src={pokemon?.image} className="w-40 md:w-64 md:h-64" alt="" />
@@ -103,4 +103,4 @@ const DetailPokemon = () => {
   )
 }
 
-export default DetailPokemon
+export default PokemonDetail

@@ -47,7 +47,7 @@ const App = () => {
   return (
     <Layout>
       <div ref={scrollToTop} className="h-80% w-full overflow-auto">
-        <div className="grid grid-flow-row auto-rows-max grid-cols-2 gap-3 p-5">
+        <div className="grid grid-flow-row auto-rows-max grid-cols-2 gap-5 p-8">
           {pokemons.map((pokemon, index) => (
             <Link key={index} to={`pokemon/${pokemon?.name}`}>
               <Card className="flex h-full flex-col items-center justify-between bg-slate-100 dark:bg-transparent shadow-lg ring-black ring dark:ring-white " >

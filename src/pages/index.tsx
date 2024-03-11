@@ -50,8 +50,8 @@ const App = () => {
         <div className="grid grid-flow-row auto-rows-max grid-cols-2 gap-5 p-8">
           {pokemons.map((pokemon, index) => (
             <Link key={index} to={`pokemon/${pokemon?.name}`}>
-              <Card className="flex h-full flex-col items-center justify-between bg-slate-100 dark:bg-transparent shadow-lg ring-black ring dark:ring-white " >
-                <CardHeader className="text-slate-900 dark:text-white">
+              <Card className="flex h-full flex-col items-center justify-between bg-white dark:bg-transparent shadow-lg shadow-black ring-black ring dark:ring-white " >
+                <CardHeader className="text-black dark:text-white">
                 </CardHeader>
                 <CardContent className="flex h-full w-full items-center justify-center">
                   <img src={pokemon?.image} className="w-auto h-auto" alt="image" />

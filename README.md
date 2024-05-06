@@ -4,26 +4,37 @@
   Explore the digital realm of Pokémon on this website, where an extensive database awaits you. Dive into detailed profiles showcasing each Pokémon's name, stats, abilities, and more. Feel the thrill of catching your favorite Pokémon as you build your collection. Track your progress on the "My Pokémon" page and witness the results of your endeavors in capturing and nurturing these creatures.
 </p>
 
-## Expanding the ESLint configuration
+## ⚙️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- Vite
+- Tailwind CSS
+- Shadcn/ui
+- Visual Studio Code
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Clone this repository to your local machine using:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   ```bash
+   git clone https://github.com/dotarsojat69/Pokemon-app
+   ```
 
-Link: https://new-pokemon-app.vercel.app/
+2. Navigate to the project directory:
+
+   ```bash
+   cd Pokemon-app
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+1. Start the development server:
+   ```bash
+   npm run dev
+   ```
